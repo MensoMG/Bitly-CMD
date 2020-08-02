@@ -59,7 +59,7 @@ if __name__ == '__main__':
         try: 
             counter_link(bitly_token,user_url)
         except requests.exceptions.HTTPError:
-            print('ОШИБКА. Ваша biy.ly ссылка не корректная!\nВведите ссылку в формате "bit.ly/30iqvat".')
+            print('ОШИБКА. Ваша bit.ly ссылка не корректная!\nВведите ссылку в формате "bit.ly/30iqvat".')
         else:
             print(f'Количество переходов по вашей ссылке {user_url}: {counter_link(bitly_token,user_url)}')
     else:
